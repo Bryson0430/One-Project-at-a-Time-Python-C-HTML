@@ -1,0 +1,88 @@
+body {
+    color: white;
+    background-color: black;
+}
+
+#top {
+    font-family: 'Sans';
+    position: fixed;
+    top: -0.0rem;
+    background-color: rgb(99, 0, 0);
+    width: 500px;
+    font-size: 14px;
+}
+
+#arc {
+    width: 300px;
+    min-height: 300px;
+    background-color: rgba(211, 95, 95, 0.5);
+    border: 0.5mm red solid;
+    text-align: center;
+}
+
+#arc2 {
+    background-color: rgba(0, 0, 139, 0.733);
+    min-height: fit-content;
+}
+
+#arc2_1 {
+    background-color: rgba(1, 43, 180, 0.733);
+    min-height: fit-content
+}
+
+#arc3 {
+    background-color: rgb(224, 106, 52);
+}
+
+#arc3_1 {
+    background-color: rgb(37, 107, 173);
+    min-height: fit-content;
+}
+
+#arc3_2 {
+    background-color: rgba(255, 255, 0, 0.664);
+}
+
+article {
+    font-family: 'Sans';
+    font-size: 15px;
+}
+
+#Python {
+    position: absolute;
+    right: 20px;
+
+}
+
+#C {
+    background-color: white;
+    position: absolute;
+    right: 20px;
+}
+
+#Html {
+    position: absolute;
+    offset: 10px;
+    right: 20px;
+}
+
+#Css {
+    background-color: white;
+    position: absolute;
+    right: 20px;
+}
+
+#Javascript {
+    background-color: white;
+    position: absolute;
+    right: 20px;
+}
+
+img {
+    opacity: 0;
+}
+
+img:hover {
+
+    opacity: 1;
+}
