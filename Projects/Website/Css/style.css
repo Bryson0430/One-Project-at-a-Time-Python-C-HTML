@@ -1,22 +1,24 @@
 body {
     color: white;
     background-color: black;
+    font-family: sans;
 }
 
-#top {
+nav  {
     font-family: 'Sans';
     position: fixed;
-    top: -0.0rem;
-    background-color: rgb(99, 0, 0);
-    width: 500px;
+    top: 0.0rem;
+    background-color: rgb(0, 0, 94);
+    width: 100%;
     font-size: 14px;
+    z-index: 8;
 }
 
 #arc {
     width: 300px;
     min-height: 300px;
     background-color: rgba(211, 95, 95, 0.5);
-    border: 0.5mm red solid;
+    border: 0.5mm rgb(128, 9, 9) solid;
     text-align: center;
 }
 
@@ -26,7 +28,7 @@ body {
 }
 
 #arc2_1 {
-    background-color: rgba(1, 43, 180, 0.733);
+    background-color: rgba(17, 17, 204, 0.623);
     min-height: fit-content
 }
 
@@ -43,46 +45,29 @@ body {
     background-color: rgba(255, 255, 0, 0.664);
 }
 
-article {
-    font-family: 'Sans';
-    font-size: 15px;
-}
-
-#Python {
-    position: absolute;
-    right: 20px;
-
-}
-
-#C {
-    background-color: white;
-    position: absolute;
-    right: 20px;
-}
-
 #Html {
-    position: absolute;
-    offset: 10px;
-    right: 20px;
+    background-color: white;  
 }
 
 #Css {
     background-color: white;
-    position: absolute;
-    right: 20px;
 }
 
 #Javascript {
     background-color: white;
-    position: absolute;
-    right: 20px;
 }
 
-img {
-    opacity: 0;
-}
 
-img:hover {
 
-    opacity: 1;
+@media screen and (min-width: 35em) {
+    img {
+        position: absolute;
+        opacity: 0;
+        left: 19.4rem;
+        transition: opacity 250ms ease-out;
+    }
+    
+    img:hover {
+        opacity: 1;
+    }
 }

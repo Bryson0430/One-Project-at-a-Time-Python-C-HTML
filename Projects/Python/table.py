@@ -9,7 +9,7 @@ def test(v, h):
         hori == 1
         vert += 1
         print(" ", end = "\n")
-        for hori in range(h + 1):
+        for hori in range(h):
             
             total = vert * hori
             print(total, end = ", ")
