@@ -9,7 +9,7 @@ def test(v, h):
         hori == 1
         vert += 1
         print(" ", end = "\n")
-        for hori in range(h):
+        for hori in range(h + 1):
             
             total = vert * hori
             print(total, end = ", ")
@@ -19,7 +19,7 @@ print("how many rows do you want.")
 rows = int(input())
 print("how many columns do you want.")
 columns = int(input())
-print(f"Are you sure. {rows} * {columns} Y/N (Yes/No) ")
+print(f"Are you sure. {rows} * {columns} Y/N (Yes/No).")
 sure = input()
 while sure == "N" or sure == "No" or sure == "no" or sure == "n":
     print("how many rows do you want.")
