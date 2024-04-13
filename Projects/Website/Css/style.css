@@ -1,5 +1,9 @@
 /*general stylesheets*/
+html { font-size: 62.5%;}
+
 body {
+    font-size: 1.5rem;
+    line-height: 145.8%;
     color: white;
     background-color: black;
     font-family: 'Sans'; }
@@ -7,7 +11,10 @@ body {
 nav {
     position: relative;
     width: 100%;
-    font-size: 14px;
+    background-color: black;
+    font-size: 14px; 
+    position: fixed;
+    top: 0em;
     z-index: 2; 
 display: none; }
 a {
@@ -16,7 +23,14 @@ a {
 a:hover {
     text-decoration: underline; }
 
-
+aside {
+    background-color: rgb(128, 9, 9);
+    position: absolute;
+    right: 0%;
+    width: 33.3%;
+    height: fit-content;
+    display: none;
+}
 
 /* article stylesheets*/
 #arc {
@@ -53,51 +67,46 @@ a:hover {
 #Javascript {
     background-color: white; }
 /* dropdown stylesheets */
-.button {
-    width: 64px;
-    height: 2cap;
-    font-size: medium;
+#button {
+    width: px;
+    background-color: rgb(48, 48, 48);
     
-    right: 0px;
-    display: none;
     text-align: center; }
 
 #button {
-    position: static;
-    }
+    margin-right: 1rem; }
 
 #dropdown { 
     top: 0.0em; 
-    transition: opacity 0.5ms ease-out;
-    
-    position: absolute; }
+    transition: opacity 0.5ms ease-out; }
 
 #content {
     background-color: white;
     color:black;
     opacity: 0;
-
+    position: absolute;
     min-width: 93px; 
     transition: opacity 250ms; }
 
 #dropdown:hover #content { opacity: 1; }
 
+#arrow {
+    transform: rotate(0deg);
+    transition: all 62.5ms;
+    background-color: white;
+}
+
 #dropdown:hover img { transform: rotate(90deg);}
 
 .text-content { color: black; }
-#right-arrow {
-    transform: rotate(0deg);
-    transition: all 125ms;
 
-    
-}
 
-/*different screens */
+/*different breakpoints*/
 @media screen and (min-width: 35em) {
     .arc img {
         position: absolute;
         opacity: 0;
-        left: 19.4rem;
+        left: 31rem;
         transition: opacity 250ms ease-out;
  }
 nav {
@@ -110,3 +119,11 @@ nav {
     .button {
         display: block;
  } }
+ @media screen and (min-width: 65em){
+    aside {
+        font-size: 22px;
+        display:inline-block;
+    }
+    aside img { float: left; }
+    
+ }
