@@ -9,14 +9,19 @@ body {
     font-family: 'Sans'; }
 
 nav {
-    position: relative;
     width: 100%;
     background-color: black;
     font-size: 14px; 
     position: fixed;
     top: 0em;
     z-index: 2; 
-display: none; }
+    display: none; }
+
+#nav-mobile { position: fixed;
+        background-color: black;
+        width: 100%; 
+        top:0.0em; }
+
 a {
     color: white;
     text-decoration: none; }
@@ -26,11 +31,10 @@ a:hover {
 aside {
     background-color: rgb(128, 9, 9);
     position: absolute;
+    top: 2%;
     right: 0%;
-    width: 33.3%;
-    height: fit-content;
-    display: none;
-}
+    width: 386px;
+    display: none; }
 
 /* article stylesheets*/
 #arc {
@@ -58,72 +62,61 @@ aside {
 #arc3_2 {
     background-color: rgba(255, 255, 0, 0.664); }
 
-#Html {
-    background-color: white;   }
-
-#Css {
-    background-color: white; }
-
-#Javascript {
-    background-color: white; }
+.white-back { background-color: white; }
 /* dropdown stylesheets */
+#dropdown { 
+    position: fixed;
+    top: 0.0em; 
+    transition: all 0.5ms ease-out; }
+
 #button {
-    width: px;
+    width: 50px;
     background-color: rgb(48, 48, 48);
-    
     text-align: center; }
 
-#button {
-    margin-right: 1rem; }
-
-#dropdown { 
-    top: 0.0em; 
-    transition: opacity 0.5ms ease-out; }
+#button { margin-right: 1rem; }
 
 #content {
     background-color: white;
-    color:black;
+    width: 9.3rem;
     opacity: 0;
-    position: absolute;
-    min-width: 93px; 
-    transition: opacity 250ms; }
+    transition: all 250ms ease-in; }
+
+footer { margin-top: 1.6rem; border-top: 0.01rem white solid; }
 
 #dropdown:hover #content { opacity: 1; }
 
+.text-content {
+    color: black;
+    display: inline-block;
+    width: 9.3rem; }
+
+#dropdown a:hover { background-color: grey; }
+
 #arrow {
     transform: rotate(0deg);
-    transition: all 62.5ms;
-    background-color: white;
-}
+    transition: all 125ms;
+    background-color: white; }
 
-#dropdown:hover img { transform: rotate(90deg);}
+#dropdown:hover #arrow { transform: rotate(90deg); }
 
-.text-content { color: black; }
-
-
-/*different breakpoints*/
+/*different breakpoints(screen sizes)*/
 @media screen and (min-width: 35em) {
     .arc img {
         position: absolute;
         opacity: 0;
         left: 31rem;
-        transition: opacity 250ms ease-out;
- }
-nav {
-    display: block;
+        transition: opacity 250ms ease-out; }
+nav { display: inline-block; }
+
+#nav-mobile { display: none; }
+
+.arc:hover img { opacity: 1; } 
 }
 
-.arc:hover img {
-    opacity: 1;
-}
-    .button {
-        display: block;
- } }
- @media screen and (min-width: 65em){
+ @media screen and (min-width: 65em) {
     aside {
         font-size: 22px;
-        display:inline-block;
-    }
-    aside img { float: left; }
-    
- }
+        display:inline-block; }
+
+    aside img { float: left; } }
