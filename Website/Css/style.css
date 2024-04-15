@@ -45,10 +45,10 @@ aside {
     text-align: center; }
 
 #arc2 {
-    background-color: rgba(0, 0, 139, 0.733); }
+    background-color: rgba(0, 0, 255, 0.733); }
 
 #arc2_1 {
-    background-color: rgba(17, 17, 204, 0.623); }
+    background-color: rgba(0, 110, 255, 0.623); }
 
 #arc3 {
     background-color: rgb(224, 106, 52); }
@@ -62,7 +62,7 @@ aside {
 
 .white-back { background-color: white; }
 
-footer { margin-top: 1.6rem; border-top: 0.01rem white solid; }
+footer { margin-top: 2rem; border-top: 0.01rem white solid; }
 
 /* dropdown stylesheets */
 #dropdown { 
