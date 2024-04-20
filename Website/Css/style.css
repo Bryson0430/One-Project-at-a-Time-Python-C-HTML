@@ -36,6 +36,12 @@ aside {
     width: 386px;
     display: none; }
 
+#authorb {
+    position: absolute;
+    right: 0%;
+    top: 10%
+}
+
 /* article stylesheets*/
 #arc {
     width: 300px;
