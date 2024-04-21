@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/test.css">
+    
     <title>Document</title>
 </head>
 <body>
     <h1>hello</h1>
     
-    <p>value of range: None</p>
-    <input  name="range" id="range" placeholder="Text pls...">
-    <button id="button" onclick=submit()>submit</button>
-    <button type="button" onclick=reset()>Clear</button>
+    <p id="vrange">value of range: None</p>
+    <p id="itext">value of i: None</p>
+    <input  type="text" name="range" id="range" placeholder="Text pls..." maxlength="46" minlength="1" max="100">
+    <button id="submit" onclick=submit()>submit</button>
+    <button type="button" onclick=reset()>Clear</button><br>
+    <button id="change" onclick=changet()>change type</button>
     <script src="../Javascript/testp.js"></script>
 </body>
 </html>
