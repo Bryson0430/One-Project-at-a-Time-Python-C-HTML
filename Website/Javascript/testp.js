@@ -42,7 +42,7 @@ function changet() {
         range.type = "time"
     }
    
-    if (i > 5) {
+    if (i > 4) {
         i = 0
     }
  i++
