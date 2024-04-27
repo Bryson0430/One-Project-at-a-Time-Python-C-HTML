@@ -1,3 +1,4 @@
+
 let i = [
     "1",
     4,
@@ -6,6 +7,13 @@ let i = [
 ]
 
 function findsc(list, val) {
+    valu = typeof list
+
+    if (valu !== list) {
+        console.log("why")
+    }
+
+
     let numinval = 0 
     for (let count in list) {
         if (list[count] === val) {

@@ -1,0 +1,33 @@
+html {
+    background-color: black;
+    color: white;
+    min-height: 62.5%;
+}
+
+body {font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+#sticky {
+    background-color: yellow;
+    color: black;
+    width: 7em;
+    height: 7em;
+    
+}
+
+#list {
+    width: 100%;
+    display: inline-block;
+    min-height: 20rem;
+    margin-bottom: 50px;
+}
+
+#buttons {
+    width: 100%;
+    background-color: black;
+}
+
+button { 
+    margin-right: 1em;
+}
+
